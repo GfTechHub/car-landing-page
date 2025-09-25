@@ -1,343 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <!-- AOS Animate on Scroll -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Car Landing Page</title>
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Car Company Landing Page</title>
+  
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-      <!-- Logo / Brand -->
-      <a class="navbar-brand fw-bold" href="#">DriveNow</a>
-
-      <!-- Toggler button (for mobile) -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand fw-bold" href="#">CarBrand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Models</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#showcase">Showcase</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  
-<!-- Hero Section -->
-<section class="hero d-flex align-items-center text-center text-white" data-aos="fade-up">
-  <div class="container">
-    <h1 class="images/hero-bg.jpg">FIND CARS THAT MATCH YOUR LIFESTYLE</h1>
-    <p class="lead mt-3">Browse our premium collection of cars designed for speed, comfort, and style.</p>
-    <a href="images/hero-bg.jpg" class="btn btn-dark btn-lg mt-4">Explore Now</a>
-  </div>
-</section>
-  
-  <!-- Stats Section -->
-  <div class="col-md-4 mb-4" data-aos="zoom-in">
-  <section class="stats py-5 text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h2 class="fw-bold counter" data-target="150">0</h2>
-          <p class="text-muted">Car Models</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h2 class="fw-bold counter" data-target="200">0</h2>
-          <p class="text-muted">International Awards</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h2 class="fw-bold counter" data-target="10000">0</h2>
-          <p class="text-muted">Happy Customers</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-    <!-- Car Showcase Carousel -->
-    <div class="carousel-item active" data-aos="fade-left">
-  <section class="car-carousel py-5">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-4">Featured Cars</h2>
-      
-      <div id="carCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <img src="images/car1.jpg" class="d-block w-100 rounded-3" alt="Car 1">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Sporty Coupe</h5>
-              <p>High performance and sleek design for true enthusiasts.</p>
-            </div>
-          </div>
-          
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <img src="images/car2.jpg" class="d-block w-100 rounded-3" alt="Car 2">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Luxury SUV</h5>
-              <p>Comfort and power combined for every adventure.</p>
-            </div>
-          </div>
-          
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <img src="images/car3.jpg" class="d-block w-100 rounded-3" alt="Car 3">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Eco Sedan</h5>
-              <p>Efficiency meets elegance with hybrid technology.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-        
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="2"></button>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  
-  <!-- Car Grid Section -->
-  <div class="col-md-4" data-aos="flip-left">
-  <section class="car-grid py-5">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-5">Our Popular Models</h2>
-      <div class="row g-4">
-        
-        <!-- Car Card 1 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/ccar1.jpg" class="card-img-top" alt="Car 1">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">City Compact</h5>
-              <p class="card-text text-muted">Perfect for urban driving with style and comfort.</p>
-              <a href="#" class="btn btn-dark rounded-pill">Learn More</a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Car Card 2 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/ccar2.jpg" class="card-img-top" alt="Car 2">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">Family SUV</h5>
-              <p class="card-text text-muted">Spacious, safe, and built for every adventure.</p>
-              <a href="#" class="btn btn-dark rounded-pill">Learn More</a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Car Card 3 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/ccar3.jpg" class="card-img-top" alt="Car 3">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">Electric Hatchback</h5>
-              <p class="card-text text-muted">Eco-friendly performance with modern design.</p>
-              <a href="#" class="btn btn-dark rounded-pill">Learn More</a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Car Card 4 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/ccar4.jpg" class="card-img-top" alt="Car 4">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">Luxury Sedan</h5>
-              <p class="card-text text-muted">Elegance and comfort blended with powerful performance.</p>
-              <a href="#" class="btn btn-dark rounded-pill">Learn More</a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Car Card 5 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/ccar5.jpg" class="card-img-top" alt="Car 5">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">Sport Coupe</h5>
-              <p class="card-text text-muted">Sleek design with raw power for performance lovers.</p>
-              <a href="#" class="btn btn-dark rounded-pill">Learn More</a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Car Card 6 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="images/ccar6.jpg" class="card-img-top" alt="Car 6">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">Off-Road 4x4</h5>
-              <p class="card-text text-muted">Built for adventure with strength and endurance.</p>
-              <a href="#" class="btn btn-dark rounded-pill">Learn More</a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  
-    <!-- Testimonials Section -->
-    <div class="carousel-item active text-center" data-aos="fade-up">
-  <section class="testimonials py-5 bg-dark text-white">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-5">What Our Customers Say</h2>
-      
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          
-          <!-- Testimonial 1 -->
-          <div class="carousel-item active text-center">
-            <img src="images/user1.jpg" class="rounded-circle mb-3" alt="User 1" width="80" height="80">
-            <p class="lead">“Absolutely love my new car! Smooth process and excellent service.”</p>
-            <h6 class="fw-bold">Sarah Johnson</h6>
-            <p class="text-muted small">New York, USA</p>
-          </div>
-          
-          <!-- Testimonial 2 -->
-          <div class="carousel-item text-center">
-            <img src="images/user2.jpg" class="rounded-circle mb-3" alt="User 2" width="80" height="80">
-            <p class="lead">“The SUV is perfect for my family. Spacious, safe, and stylish.”</p>
-            <h6 class="fw-bold">David Lee</h6>
-            <p class="text-muted small">Toronto, Canada</p>
-          </div>
-          
-          <!-- Testimonial 3 -->
-          <div class="carousel-item text-center">
-            <img src="images/user3.jpg" class="rounded-circle mb-3" alt="User 3" width="80" height="80">
-            <p class="lead">“Great experience! I highly recommend this company to everyone.”</p>
-            <h6 class="fw-bold">Maria Gonzales</h6>
-            <p class="text-muted small">Madrid, Spain</p>
-          </div>
-        </div>
-        
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </div>
-  </section>
-  
-  
-  
-  <!-- Newsletter Section -->
-  <section class="newsletter py-5">
-    <div class="container">
-      <div class="p-5 rounded-3 text-center">
-        <h3 class="fw-bold">STAY UP TO DATE WITH OUR LATEST OFFERS</h3>
-        <p class="mb-4 text-white-50">Subscribe for updates, special deals, and new models.</p>
-        <form class="d-flex justify-content-center">
-          <input type="email" class="form-control w-50 me-2 rounded-pill" placeholder="Enter your email" required>
-          <button type="submit" class="btn btn-light rounded-pill">Subscribe</button>
-        </form>
-      </div>
-    </div>
-  </section>
-  
 
-  
-  
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold">FIND CARS THAT MATCH YOUR LIFESTYLE</h1>
+      <p class="lead mt-3">Browse our premium collection of cars designed for speed, comfort, and style.</p>
+      <a href="#" class="btn btn-dark btn-lg mt-4">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- Showcase Section -->
+  <section id="showcase" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Our Latest Models</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/car1.jpg" class="card-img-top" alt="Car 1">
+            <div class="card-body">
+              <h5 class="card-title">Car Model 1</h5>
+              <p class="card-text">Luxury, comfort, and speed in one package.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/car2.jpg" class="card-img-top" alt="Car 2">
+            <div class="card-body">
+              <h5 class="card-title">Car Model 2</h5>
+              <p class="card-text">Designed for those who love performance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/car3.jpg" class="card-img-top" alt="Car 3">
+            <div class="card-body">
+              <h5 class="card-title">Car Model 3</h5>
+              <p class="card-text">A blend of style and innovation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">What Our Customers Say</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 shadow-sm bg-white rounded">
+            <p>"This car completely changed my driving experience!"</p>
+            <h6>- Alex</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 shadow-sm bg-white rounded">
+            <p>"Stylish, reliable, and perfect for my lifestyle."</p>
+            <h6>- Maria</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 shadow-sm bg-white rounded">
+            <p>"I love the comfort and speed of my new ride."</p>
+            <h6>- John</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section id="newsletter" class="newsletter text-white text-center">
+    <div class="p-5">
+      <h2 class="fw-bold">Stay Updated</h2>
+      <p class="mb-4">Subscribe to our newsletter for the latest car news and offers.</p>
+      <form class="d-flex justify-content-center">
+        <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+        <button class="btn btn-dark">Subscribe</button>
+      </form>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="footer text-white pt-5 pb-4">
-    <div class="container">
-      <div class="row">
-        
-        <!-- Brand / About -->
-        <div class="col-md-3 mb-4">
-          <h5 class="fw-bold">DriveNow</h5>
-          <p class="text-white-50">
-            We craft cars that suit your lifestyle. From performance to comfort.
-          </p>
-          <div class="d-flex gap-3">
-            <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
-          </div>
-        </div>
-        
-        <!-- Company -->
-        <div class="col-md-2 mb-4">
-          <h6 class="fw-bold">Company</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white-50">About</a></li>
-            <li><a href="#" class="text-white-50">Careers</a></li>
-            <li><a href="#" class="text-white-50">Blog</a></li>
-          </ul>
-        </div>
-        
-        <!-- Help -->
-        <div class="col-md-2 mb-4">
-          <h6 class="fw-bold">Help</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white-50">Customer Support</a></li>
-            <li><a href="#" class="text-white-50">Delivery</a></li>
-            <li><a href="#" class="text-white-50">FAQs</a></li>
-          </ul>
-        </div>
-        
-        <!-- Payment methods -->
-        <div class="col-md-5 text-md-end">
-          <h6 class="fw-bold mb-3">Payment Methods</h6>
-          <div class="d-flex flex-wrap justify-content-md-end gap-2">
-            <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" height="32">
-            <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" height="32">
-            <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal" height="32">
-            <img src="https://img.icons8.com/color/48/apple-pay.png" alt="Apple Pay" height="32">
-          </div>
-        </div>
-      </div>
-      
-      <hr class="border-secondary my-4">
-      
-      <div class="text-center small text-white-50">
-        &copy; 2025 DriveNow. All rights reserved.
+  <footer id="footer" class="footer text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 CarBrand. All Rights Reserved.</p>
+      <div>
+        <a href="#" class="text-white me-3">Privacy Policy</a>
+        <a href="#" class="text-white me-3">Terms of Service</a>
+        <a href="#" class="text-white">Contact</a>
       </div>
     </div>
   </footer>
-  
-  <script src="script.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-<!-- AOS Script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1200, // animation duration in ms
-    once: true // run only once
-  });
-</script>
 </html>

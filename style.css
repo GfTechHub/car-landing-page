@@ -1,169 +1,22 @@
-/* General Reset */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Section */
 .hero {
-  background: url('https://source.unsplash.com/1600x800/?car,luxury') center/cover no-repeat;
+  background: url('../images/hero-bg.jpg') center/cover no-repeat;
   height: 100vh;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-}
-
-.hero p {
-  font-size: 1.2rem;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
-
-
-/* Stats Section */
-.stats {
-  background-color: #f8f9fa; /* light grey */
-}
-
-.stats h2 {
-  font-size: 2.5rem;
-  color: #000;
-}
-
-.stats p {
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
-}
-
-/* Newsletter Section */
-.newsletter {
-  background-color: #000; /* black background */
-  color: #fff;
-}
-
-.newsletter h3 {
-  font-size: 1.8rem;
-}
-
-.newsletter input {
-  max-width: 350px;
-}
-
-
-
-
-
-
-/* Footer */
-.footer {
-  background-color: #f8f9fa;
-}
-
-.footer h5, .footer h6 {
-  color: #000;
-}
-
-.footer a {
-  text-decoration: none;
-}
-
-.footer a:hover {
-  color: #000;
-}
-
-
-
-
-
-
-/* Footer */
-.footer {
-  background-color: #000; /* black background */
-}
-
-.footer h5, .footer h6 {
-  color: #fff;
-}
-
-.footer a {
-  text-decoration: none;
-}
-
-.footer a:hover {
-  color: #ddd;
-}
-
-
-/* Car Showcase Carousel */
-.car-carousel h2 {
-  color: #000;
-}
-
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  border-radius: 10px;
-}
-
-
-/* Car Grid Section */
-.car-grid h2 {
-  color: #000;
-}
-
-.car-grid .card {
-  border: none;
-  transition: transform 0.3s ease;
-}
-
-.car-grid .card:hover {
-  transform: translateY(-8px);
-}
-/* Button Glow Effect */
-.btn-dark {
-  transition: all 0.3s ease;
-}
-
-.btn-dark:hover {
-  background-color: #ff0000; /* accent color */
-  color: #fff;
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
-
-
-
-/* Testimonials Section */
-.testimonials {
   position: relative;
 }
 
-.testimonials img {
-  object-fit: cover;
-  border: 3px solid #fff;
-}
-
-.testimonials p.lead {
-  font-style: italic;
-  color: #f8f9fa; /* lighter white */
-  max-width: 700px;
-  margin: 0 auto 15px;
-}
-
-.testimonials h6 {
-  margin-top: 10px;
-  color: #ff0000; /* brand accent color */
-
-
-
-/* Hero Section */
-.hero {
-  background: url('images/hero.jpg') center/cover no-repeat;
-  height: 100vh; /* full screen height */
-  position: relative;
-}
-
-/* Optional: Dark overlay for readability */
 .hero::before {
   content: "";
   position: absolute;
@@ -171,11 +24,57 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  background: rgba(0, 0, 0, 0.55);
   z-index: 1;
 }
 
 .hero .container {
   position: relative;
-  z-index: 2; /* keep text above overlay */
+  z-index: 2;
+}
+
+/* Showcase */
+#showcase .card {
+  transition: transform 0.3s ease;
+}
+
+#showcase .card:hover {
+  transform: translateY(-10px);
+}
+
+/* Testimonials */
+#testimonials .p-4 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#testimonials .p-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Newsletter */
+.newsletter {
+  background: url('../images/newsletter-bg.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.newsletter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+.newsletter .p-5 {
+  position: relative;
+  z-index: 2;
+}
+
+/* Footer */
+.footer {
+  background: #111;
 }
