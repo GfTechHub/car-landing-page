@@ -106,3 +106,18 @@ body, html {
   padding: 15px;
   border-radius: 10px;
 }
+
+
+/* Car Grid Section */
+.car-grid h2 {
+  color: #000;
+}
+
+.car-grid .card {
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.car-grid .card:hover {
+  transform: translateY(-8px);
+}
