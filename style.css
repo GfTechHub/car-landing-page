@@ -121,3 +121,25 @@ body, html {
 .car-grid .card:hover {
   transform: translateY(-8px);
 }
+/* Button Glow Effect */
+.btn-dark {
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #ff0000; /* accent color */
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+
+
+
+/* Testimonials Section */
+.testimonials img {
+  object-fit: cover;
+  border: 3px solid #000;
+}
+
+.testimonials p.lead {
+  font-style: italic;
+  color: #333;
+}
