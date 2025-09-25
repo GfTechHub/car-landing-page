@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- AOS Animate on Scroll -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +36,7 @@
   </nav>
   
   <!-- Hero Section -->
+  <div class="hero-content text-center text-white" data-aos="fade-up">
   <section class="hero d-flex align-items-center text-center text-white">
     <div class="container">
       <h1 class="display-4 fw-bold">FIND CARS THAT MATCH YOUR LIFESTYLE</h1>
@@ -43,6 +46,7 @@
   </section>
   
   <!-- Stats Section -->
+  <div class="col-md-4 mb-4" data-aos="zoom-in">
   <section class="stats py-5 text-center">
     <div class="container">
       <div class="row">
@@ -63,6 +67,7 @@
   </section>
   
     <!-- Car Showcase Carousel -->
+    <div class="carousel-item active" data-aos="fade-left">
   <section class="car-carousel py-5">
     <div class="container">
       <h2 class="text-center fw-bold mb-4">Featured Cars</h2>
@@ -118,6 +123,7 @@
   
   
   <!-- Car Grid Section -->
+  <div class="col-md-4" data-aos="flip-left">
   <section class="car-grid py-5">
     <div class="container">
       <h2 class="text-center fw-bold mb-5">Our Popular Models</h2>
@@ -200,6 +206,7 @@
   </section>
   
     <!-- Testimonials Section -->
+    <div class="carousel-item active text-center" data-aos="fade-up">
   <section class="testimonials py-5 bg-light">
     <div class="container">
       <h2 class="text-center fw-bold mb-5">What Our Customers Say</h2>
@@ -326,4 +333,12 @@
   
   <script src="script.js"></script>
 </body>
+<!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200, // animation duration in ms
+    once: true // run only once
+  });
+</script>
 </html>

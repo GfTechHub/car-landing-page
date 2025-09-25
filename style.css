@@ -143,3 +143,8 @@ body, html {
   font-style: italic;
   color: #333;
 }
+
+/* AOS overrides */
+[data-aos] {
+  transition-timing-function: ease-in-out;
+}
