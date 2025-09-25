@@ -134,17 +134,48 @@ body, html {
 
 
 /* Testimonials Section */
+.testimonials {
+  position: relative;
+}
+
 .testimonials img {
   object-fit: cover;
-  border: 3px solid #000;
+  border: 3px solid #fff;
 }
 
 .testimonials p.lead {
   font-style: italic;
-  color: #333;
+  color: #f8f9fa; /* lighter white */
+  max-width: 700px;
+  margin: 0 auto 15px;
 }
 
-/* AOS overrides */
-[data-aos] {
-  transition-timing-function: ease-in-out;
+.testimonials h6 {
+  margin-top: 10px;
+  color: #ff0000; /* brand accent color */
+
+
+
+/* Hero Section */
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  height: 100vh; /* full screen height */
+  position: relative;
+}
+
+/* Optional: Dark overlay for readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2; /* keep text above overlay */
 }
