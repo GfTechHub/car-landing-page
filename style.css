@@ -36,3 +36,17 @@ body, html {
   font-size: 1.1rem;
   margin-top: 0.5rem;
 }
+
+/* Newsletter Section */
+.newsletter {
+  background-color: #000; /* black background */
+  color: #fff;
+}
+
+.newsletter h3 {
+  font-size: 1.8rem;
+}
+
+.newsletter input {
+  max-width: 350px;
+}
